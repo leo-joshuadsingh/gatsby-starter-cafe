@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Menu from '../components/menu/menu'
-import Instagram from '../components/instagram'
 import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 
@@ -31,10 +30,22 @@ return (
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </section>
+    <section className="container">
+      <form action="" netlify>
+        <select name="people">
+          <option value="1">1 Person</option>
+          <option value="2">2 People</option>
+        </select>
+        <input type="date" />
+        <select name="time">
+          <option value="6:30PM">6:30PM</option>
+          <option value="7:00PM">7:00PM</option>
+        </select>
+      </form>
+    </section>
     <div className="parallax"></div>
     <section className="container">
       <Menu />
-      <Instagram />
     </section>
     {typeof window !== 'undefined' &&
       <LeafletMap
